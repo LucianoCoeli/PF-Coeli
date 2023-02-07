@@ -1,0 +1,11 @@
+/*Las variables van arriba de todo*/
+@import './utilidades/typo';
+@import './utilidades/colors';
+@import './utilidades/reset';
+
+h1{
+    color: $amarillo;
+}
+
+/*Secciones*/
+@import './secciones/header'
