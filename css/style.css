@@ -16,3 +16,13 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 250%;
   height: 75px; }
+
+.main-index h2 {
+  background-color: #AAF683;
+  font-weight: bold; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
