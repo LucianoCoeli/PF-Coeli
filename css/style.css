@@ -8,17 +8,17 @@
   font-family: "Source Sans Pro", sans-serif; }
 
 h1 {
-  color: #FFD97D; }
+  color: black; }
 
 /*Secciones*/
 h1 {
-  background-color: #FF9B85;
+  background-color: #e10e8223;
   font-family: "Montserrat", sans-serif;
   font-size: 250%;
   height: 75px; }
 
 .main-index h2 {
-  background-color: #AAF683;
+  background-color: #e10e82;
   font-weight: bold; }
 
 .flex-column {
