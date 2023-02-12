@@ -1,28 +1,156 @@
 /*Las variables van arriba de todo*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 /*Variables globales*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 h1 {
-  color: black; }
+  color: white; }
+
+h2 {
+  color: #e10e82;
+  background-color: #e10e8223; }
+
+.main {
+  margin: 0rem 2.5rem; }
+
+.titulo-interno {
+  background-color: #00b400;
+  margin: 0rem -2.5rem;
+  padding: .5rem 0rem;
+  text-align: center; }
 
 /*Secciones*/
-h1 {
-  background-color: #e10e8223;
-  font-family: "Montserrat", sans-serif;
-  font-size: 250%;
-  height: 75px; }
-
-.main-index h2 {
-  background-color: #e10e82;
-  font-weight: bold; }
-
-.flex-column {
+.header {
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-between; }
+
+.logogame {
+  width: 180px; }
+
+.botones {
+  list-style: none;
+  display: flex; }
+  .botones a {
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 150%;
+    text-decoration: none;
+    color: #e10e82; }
+
+.banner {
+  margin: 0rem -2.5rem;
+  background-image: url("https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg");
+  height: 350px;
+  background-size: cover;
+  background-position-y: center; }
+  .banner h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 2px 2px 3px #3f3f3f;
+    position: relative;
+    top: 40%; }
+
+.productos-grid {
+  margin: 2rem 0rem 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  grid-template-areas: "producto-uno producto-dos producto-tres" "producto-cuatro producto-cinco producto-seis"; }
+  .productos-grid img {
+    width: 28vw;
+    padding: 3px; }
+  .productos-grid div {
+    width: 28vw;
+    padding: 3px; }
+  .productos-grid h3 {
+    color: #e10e82;
+    background-color: #e10e8223;
+    padding: 6px;
+    font-size: 160%; }
+  .productos-grid p {
+    font-size: 120%;
+    padding: 8px 4px; }
+  .productos-grid button {
+    margin-left: 8px;
+    margin-bottom: 1rem;
+    padding: 3px; }
+
+.productos-grid-mesa {
+  margin: 2rem 0rem 1rem 1.5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  grid-template-areas: "producto-once producto-tres producto-cuatro" "producto-cinco . ."; }
+  .productos-grid-mesa img {
+    width: 28vw;
+    padding: 3px; }
+  .productos-grid-mesa div {
+    width: 28vw;
+    padding: 3px; }
+  .productos-grid-mesa h3 {
+    color: #e10e82;
+    background-color: #e10e8223;
+    padding: 6px;
+    font-size: 160%; }
+  .productos-grid-mesa p {
+    font-size: 120%;
+    padding: 8px 4px; }
+  .productos-grid-mesa button {
+    margin-left: 8px;
+    margin-bottom: 1rem;
+    padding: 3px; }
+
+.productos-grid-rol {
+  margin: 2rem 0rem 1rem 1.5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  grid-template-areas: "producto-siete producto-ocho producto-nueve" "producto-diez . ."; }
+  .productos-grid-rol img {
+    width: 28vw;
+    padding: 3px; }
+  .productos-grid-rol div {
+    width: 28vw;
+    padding: 3px; }
+  .productos-grid-rol h3 {
+    color: #e10e82;
+    background-color: #e10e8223;
+    padding: 6px;
+    font-size: 160%; }
+  .productos-grid-rol p {
+    font-size: 120%;
+    padding: 8px 4px; }
+  .productos-grid-rol button {
+    margin-left: 8px;
+    margin-bottom: 1rem;
+    padding: 3px; }
+
+.footer {
+  background-color: #e10e82;
+  padding-bottom: 30px; }
+  .footer div {
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    padding: 20px; }
+
+.redes {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; }
+  .redes img {
+    height: 35px; }

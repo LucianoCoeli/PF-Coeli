@@ -1,0 +1,39 @@
+.productos-grid-mesa {
+    margin: 2rem 0rem 1rem 1.5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    grid-template-areas:
+        "producto-once producto-tres producto-cuatro"
+        "producto-cinco . .";
+
+    img {
+        width: 28vw;
+        padding: 3px;
+    }
+    
+    div {
+        width: 28vw;
+        padding: 3px;
+    }
+
+    h3 {
+        color: #e10e82;
+        background-color: #e10e8223;
+        padding: 6px;
+        font-size: 160%;
+    }
+
+    p {
+        font-size: 120%;
+        padding: 8px 4px;
+    }
+
+    button {
+        margin-left: 8px;
+        margin-bottom: 1rem;
+        padding: 3px;
+    }
+}

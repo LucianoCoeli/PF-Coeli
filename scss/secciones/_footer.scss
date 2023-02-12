@@ -1,0 +1,21 @@
+.footer {
+    background-color: #e10e82;
+    padding-bottom: 30px;
+
+    div {
+        color: white;
+        text-align: center;
+        font-size: 120%;
+        padding: 20px;
+    }
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+        height: 35px;
+    }
+}

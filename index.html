@@ -1,26 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Clase 14 - SASS II</title>
+    <title>Inicio</title>
 </head>
 
 <body>
     <header class="header">
-        <h1>Clase 14</h1>
+        <a class="top" href="index.html"><img class="logogame" src="./recursos/logo/game-logo.png" alt="logo-game"></a>
+        <nav>
+            <ul class="botones">
+                <li><a href="./secciones/juegos-de-mesa.html">Juegos de Mesa</a></li>
+                <li><a href="./secciones/juegos-de-rol.html">Juegos de Rol</a></li>
+                <li><a href="./secciones/blog.html">Blog</a></li>
+                <li><a href="./secciones/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="main-index">
-        <div class="flex-column">
-            <h2>SASS II</h2>
-        </div>
-    </main>
-    <footer class="footer">
-        <h3>Comisión DW</h3>
-    </footer>
-</body>
 
+    <main class="main">
+        <section class="banner">
+            <h1 class="wow animate__animated animate__swing">Tus juegos favoritos en un solo lugar</h1>
+        </section>
+        <section class="productos-grid">
+            <article class="producto-uno">
+                <img src="./recursos/productos/productouno.jpg" alt="producto-uno">
+                <div>
+                    <h3>Pokémon TCG | Hisuian Electrode V</h3>
+                    <p>¡Sorprende a tu rival con una remontada explosiva gracias a Electrode de Hisui V! Este Pokémon de
+                        tipo Planta se vuelve aún más poderoso cuando se ve afectado por Condiciones Especiales, y puede
+                        hacer hasta 300 puntos de daño sin ningún costo de Energía, ¡así que arriésgate sin miedo!</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-dos">
+                <img src="./recursos/productos/productodos.jpg" alt="producto-dos">
+                <div>
+                    <h3>Pokémon TCG | SM3 Burning Shadows</h3>
+                    <p>¿Qué extraños incendios acechan en las sombras? Miembros de Team Skull y un montón de nuevos
+                        Pokémon están listos para la batalla en la oscuridad de la noche y en el sol ardiente.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-tres">
+                <img src="./recursos/productos/productotres.jpg" alt="producto-tres">
+                <div>
+                    <h3>Carcassonne | 20 Aniversario</h3>
+                    <p>Carcassonne 20 aniversario es una edición especial de Carcassonne para celebrar el 20 aniversario
+                        de su victoria en el Spiel des Jahres en 2001. Esta edición incluye las fichas del juego base de
+                        Carcassonne, la mini expansión «El Río» (con cinco fichas de río nuevas), La miniexpansión «La
+                        Abadia» y una nueva miniexpansión «aniversario» de 15 casillas.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-cuatro">
+                <img src="./recursos/productos/productocuatro.jpg" alt="producto-cuatro">
+                <div>
+                    <h3>Fantasma Blitz</h3>
+                    <p>Un juego de reflejos rápido como un relámpago. Cada turno se revela una carta y los jugadores
+                        deben atrapar rápidamente el objeto que coincide en forma y color con alguno de los que se
+                        muestran en la carta. El problema es que en la mayoría de las cartas no hay ningún objeto que
+                        coincida.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-cinco">
+                <img src="./recursos/productos/productocinco.jpg" alt="producto-cinco">
+                <div>
+                    <h3>Century: La Ruta de las Especias</h3>
+                    <p>Siglos atrás, el comercio de especias constituyó el sistema económico más importante del mundo entero. Fundó y destruyó imperios, empujó al ser humano a explorar los rincones más recónditos de la Tierra y condujo al descubrimiento de nuevos mundos. ¡Su valor llegó a rivalizar incluso con el oro!</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-seis">
+                <img src="./recursos/productos/productoseis.jpg" alt="producto-seis">
+                <div>
+                    <h3>El Anillo Único</h3>
+                    <p>El Anillo Único es un juego de rol de fantasía ambientado en el mundo de El Hobbit y El Señor de
+                        los Anillos, y te proporciona todo lo que necesitas para comenzar tus aventuras en la Tierra
+                        Media.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>Juramento 2550 6toA, Buenos Aires | +(54) 11 4784 3284 | contacto@devir.com.ar | Lun-Vie: 9 a 18 hs</p>
+        </div>
+        <ol class="redes">
+            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img class="wow animate__animated animate__shakeX" src="./recursos/redes/facebook.png" alt="facebook-logo"></a></li>
+            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img  class="wow animate__animated animate__shakeX" src="./recursos/redes/instagram.png" alt="instagram-logo"></a></li>
+            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img class="wow animate__animated animate__shakeX" src="./recursos/redes/twitter.png" alt="twitter-logo"></a></li>
+        </ol>
+    </footer>
+
+</body>
+<script src="./js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
 </html>

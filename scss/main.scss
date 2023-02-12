@@ -4,9 +4,28 @@
 @import './utilidades/reset';
 
 h1{
-    color: $negro;
+    color: $blanco;
+}
+
+h2{
+    color: $rosa;
+    background-color: $rosa-transparente
+}
+
+.main {
+    margin: 0rem 2.5rem;
+}
+
+.titulo-interno {
+    background-color: #00b400;
+    margin: 0rem -2.5rem;
+    padding: .5rem 0rem;
+    text-align: center;
 }
 
 /*Secciones*/
 @import './secciones/header';
 @import './secciones/main-index';
+@import './secciones/main-mesa';
+@import './secciones/main-rol';
+@import './secciones/footer';
