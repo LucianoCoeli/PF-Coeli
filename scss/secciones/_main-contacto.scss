@@ -1,0 +1,25 @@
+.contacto {
+    p {
+        font-size: 110%;
+        padding: 8px;
+    } 
+}
+
+.formulario {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    input {
+        margin: .5rem;
+    }
+
+    textarea {
+        margin: .5rem;
+    }
+
+    button {
+        margin: .5rem;
+    }
+}

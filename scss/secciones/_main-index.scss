@@ -1,15 +1,17 @@
 .banner {
     margin: 0rem -2.5rem;
-    background-image: url('https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg');
+    background-image: url(https://images.unsplash.com/photo-1585504198199-20277593b94f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1017&q=80);
     height: 350px;
     background-size: cover;
     background-position-y: center;
 
     h1 {
-        font-family: $typo-principal;
-        font-size: 300%;
+        font-family: $typo-secundaria;
+        font-weight: 700;
+        font-size: 350%;
         text-align: center;
-        text-shadow: 2px 2px 3px rgb(63, 63, 63);
+        text-shadow: 2px 2px 3px rgb(53, 53, 53);
+        text-transform: uppercase;
         position: relative;
         top: 40%;
     }

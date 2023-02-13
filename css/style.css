@@ -12,7 +12,9 @@ h1 {
 
 h2 {
   color: #e10e82;
-  background-color: #e10e8223; }
+  background-color: #e10e8223;
+  padding-left: 8px;
+  margin: 1rem 0rem; }
 
 .main {
   margin: 0rem 2.5rem; }
@@ -20,8 +22,9 @@ h2 {
 .titulo-interno {
   background-color: #00b400;
   margin: 0rem -2.5rem;
-  padding: .5rem 0rem;
-  text-align: center; }
+  padding: 1rem 0rem;
+  text-align: center;
+  font-size: 180%; }
 
 /*Secciones*/
 .header {
@@ -39,7 +42,7 @@ h2 {
   display: flex; }
   .botones a {
     padding: 1rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 150%;
     text-decoration: none;
@@ -47,15 +50,17 @@ h2 {
 
 .banner {
   margin: 0rem -2.5rem;
-  background-image: url("https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg");
+  background-image: url(https://images.unsplash.com/photo-1585504198199-20277593b94f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1017&q=80);
   height: 350px;
   background-size: cover;
   background-position-y: center; }
   .banner h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 300%;
+    font-weight: 700;
+    font-size: 350%;
     text-align: center;
-    text-shadow: 2px 2px 3px #3f3f3f;
+    text-shadow: 2px 2px 3px #353535;
+    text-transform: uppercase;
     position: relative;
     top: 40%; }
 
@@ -154,3 +159,39 @@ h2 {
   justify-content: space-evenly; }
   .redes img {
     height: 35px; }
+
+.contacto p {
+  font-size: 110%;
+  padding: 8px; }
+
+.formulario {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start; }
+  .formulario input {
+    margin: .5rem; }
+  .formulario textarea {
+    margin: .5rem; }
+  .formulario button {
+    margin: .5rem; }
+
+.blog p {
+  font-size: 110%;
+  padding: 8px; }
+
+.blog ul {
+  font-size: 110%;
+  padding-left: 5vh;
+  padding-bottom: 20px; }
+
+.blog img {
+  height: 100%;
+  margin: 0rem -2.5rem; }
+
+.banner-blog {
+  margin: 0rem -2.5rem;
+  background-image: url("https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg");
+  height: 350px;
+  background-size: cover;
+  background-position-y: 60%; }

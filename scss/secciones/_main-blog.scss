@@ -1,0 +1,26 @@
+.blog {
+    p {
+        font-size: 110%;
+        padding: 8px;
+    } 
+    ul {
+        font-size: 110%;
+        padding-left: 5vh;
+        padding-bottom: 20px;
+    }
+    img {
+        height: 100%;
+        margin: 0rem -2.5rem;
+        
+    }
+}
+
+.banner-blog {
+    margin: 0rem -2.5rem;
+    background-image: url('https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg');
+    height: 350px;
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+
