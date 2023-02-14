@@ -15,11 +15,62 @@
     display: flex;
 
     a {
-        padding: 1rem;
-        font-family: $typo-secundaria;
+        padding: 0rem 1rem;
+        font-family: $typo-principal;
         font-weight: 700;
-        font-size: 150%;
+        font-size: 130%;
         text-decoration: none;
         color: #e10e82;
     }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 1rem 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logogame {
+        width: 180px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .header {
+        padding: 1rem 0rem .5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logogame {
+        width: 160px;
+        padding-bottom: 5px;
+    }
+
+    .botones {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        a {
+            padding: 3px;
+            font-weight: 700;
+            font-size: 100%;
+            text-decoration: none;
+            color: #e10e82;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 0rem !important;
+            padding-left: 0rem !important;
+        }
+
+    }
+
 }

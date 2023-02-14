@@ -19,11 +19,12 @@ h2{
 }
 
 .titulo-interno {
+    font-family: $typo-principal;
+    font-weight: 700;
     background-color: #00b400;
     margin: 0rem -2.5rem;
     padding: 1rem 0rem;
     text-align: center;
-    font-size: 180%;
 }
 
 /*Secciones*/

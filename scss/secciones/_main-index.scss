@@ -6,6 +6,7 @@
     background-position-y: center;
 
     h1 {
+        padding: 0rem 2rem;
         font-family: $typo-secundaria;
         font-weight: 700;
         font-size: 350%;
@@ -29,7 +30,7 @@
         
     img {
         width: 28vw;
-        padding: 3px;
+        margin-bottom: .5rem;
     }
 
     div {
@@ -38,10 +39,12 @@
     }
 
     h3 {
+        font-family: $typo-principal;
         color: #e10e82;
         background-color: #e10e8223;
         padding: 6px;
         font-size: 160%;
+        font-weight: 700;
     }
 
     p {

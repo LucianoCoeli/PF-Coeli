@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif !important; }
 
 h1 {
   color: white; }
@@ -20,11 +20,12 @@ h2 {
   margin: 0rem 2.5rem; }
 
 .titulo-interno {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
   background-color: #00b400;
   margin: 0rem -2.5rem;
   padding: 1rem 0rem;
-  text-align: center;
-  font-size: 180%; }
+  text-align: center; }
 
 /*Secciones*/
 .header {
@@ -41,12 +42,47 @@ h2 {
   list-style: none;
   display: flex; }
   .botones a {
-    padding: 1rem;
-    font-family: "Montserrat", sans-serif;
+    padding: 0rem 1rem;
+    font-family: "Roboto", sans-serif !important;
     font-weight: 700;
-    font-size: 150%;
+    font-size: 130%;
     text-decoration: none;
     color: #e10e82; }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .logogame {
+    width: 180px;
+    padding-bottom: 5px; } }
+
+@media (max-width: 425px) {
+  .header {
+    padding: 1rem 0rem .5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .logogame {
+    width: 160px;
+    padding-bottom: 5px; }
+  .botones {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .botones a {
+      padding: 3px;
+      font-weight: 700;
+      font-size: 100%;
+      text-decoration: none;
+      color: #e10e82; }
+    .botones ul {
+      margin-top: 0;
+      margin-bottom: 0rem !important;
+      padding-left: 0rem !important; } }
 
 .banner {
   margin: 0rem -2.5rem;
@@ -55,7 +91,8 @@ h2 {
   background-size: cover;
   background-position-y: center; }
   .banner h1 {
-    font-family: "Montserrat", sans-serif;
+    padding: 0rem 2rem;
+    font-family: "Montserrat", sans-serif !important;
     font-weight: 700;
     font-size: 350%;
     text-align: center;
@@ -73,15 +110,17 @@ h2 {
   grid-template-areas: "producto-uno producto-dos producto-tres" "producto-cuatro producto-cinco producto-seis"; }
   .productos-grid img {
     width: 28vw;
-    padding: 3px; }
+    margin-bottom: .5rem; }
   .productos-grid div {
     width: 28vw;
     padding: 3px; }
   .productos-grid h3 {
+    font-family: "Roboto", sans-serif !important;
     color: #e10e82;
     background-color: #e10e8223;
     padding: 6px;
-    font-size: 160%; }
+    font-size: 160%;
+    font-weight: 700; }
   .productos-grid p {
     font-size: 120%;
     padding: 8px 4px; }
@@ -100,7 +139,7 @@ h2 {
   grid-template-areas: "producto-once producto-tres producto-cuatro" "producto-cinco . ."; }
   .productos-grid-mesa img {
     width: 28vw;
-    padding: 3px; }
+    margin-bottom: .5rem; }
   .productos-grid-mesa div {
     width: 28vw;
     padding: 3px; }
@@ -108,7 +147,8 @@ h2 {
     color: #e10e82;
     background-color: #e10e8223;
     padding: 6px;
-    font-size: 160%; }
+    font-size: 160%;
+    font-weight: 700; }
   .productos-grid-mesa p {
     font-size: 120%;
     padding: 8px 4px; }
@@ -127,7 +167,7 @@ h2 {
   grid-template-areas: "producto-siete producto-ocho producto-nueve" "producto-diez . ."; }
   .productos-grid-rol img {
     width: 28vw;
-    padding: 3px; }
+    margin-bottom: .5rem; }
   .productos-grid-rol div {
     width: 28vw;
     padding: 3px; }
@@ -135,7 +175,8 @@ h2 {
     color: #e10e82;
     background-color: #e10e8223;
     padding: 6px;
-    font-size: 160%; }
+    font-size: 160%;
+    font-weight: 700; }
   .productos-grid-rol p {
     font-size: 120%;
     padding: 8px 4px; }
@@ -166,9 +207,9 @@ h2 {
 
 .formulario {
   display: flex;
-  padding: 8px;
   flex-direction: column;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 1rem; }
   .formulario input {
     margin: .5rem; }
   .formulario textarea {
