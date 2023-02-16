@@ -1,13 +1,18 @@
 .footer {
+    padding: 1rem 0rem;
     background-color: #e10e82;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
     div {
-        color: white;
+        color: $negro;
         text-align: center;
         font-size: 120%;
-        padding: 20px;
+        padding: 0rem 1rem;
     }
+    
 }
 
 .redes {
@@ -16,6 +21,33 @@
     justify-content: space-evenly;
 
     img {
-        height: 35px;
+        height: 40px;
+        padding: 8px;
     }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        div {
+            font-size: 100%;
+        }
+    
+        ol {
+            margin-bottom: 0rem;
+            padding-left: 0rem;
+        }
+
+    }
+
+}
+
+@media (max-width: 425px) {
+    .footer {
+        div {
+            font-size: 90%;
+        }
+    }
+
 }

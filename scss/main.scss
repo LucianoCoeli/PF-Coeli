@@ -5,12 +5,18 @@
 
 h1{
     color: $blanco;
+    font-family: $typo-secundaria;
+    font-weight: 700;
+    font-size: 250%;
 }
 
 h2{
     color: $rosa;
+    font-family: $typo-principal;
+    font-weight: 700;
+    font-size: 150%;
     background-color: $rosa-transparente;
-    padding-left: 8px;
+    padding: 6px;
     margin: 1rem 0rem;
 }
 
@@ -19,12 +25,48 @@ h2{
 }
 
 .titulo-interno {
-    font-family: $typo-principal;
-    font-weight: 700;
     background-color: #00b400;
     margin: 0rem -2.5rem;
     padding: 1rem 0rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    div {
+        h1{
+            font-size: 150%;
+        }
+    }
+
+    .titulo-interno {
+        padding: .5rem 0rem;
+    }
+
+    h2 {
+        font-size: 130%;
+        padding: 6px;
+        margin: .5rem 0rem;
+    }
+
+}
+
+@media (max-width: 425px) {
+    div {
+        h1{
+            font-size: 130%;
+        }
+    }
+
+    .titulo-interno {
+        padding: .5rem 0rem;
+    }
+
+    h2 {
+        font-size: 110%;
+        padding: 6px;
+        margin: .5rem 0rem;
+    }
+
 }
 
 /*Secciones*/
