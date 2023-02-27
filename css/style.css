@@ -55,57 +55,35 @@ h2 {
 .header {
   padding: 1rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
+  flex-direction: column;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
+  font-size: 130%; }
+  .header .navbar-nav .nav-link.active,
+  .header .navbar-nav .show > .nav-link {
+    color: #e10e82; }
 
 .logogame {
   width: 180px; }
-
-.botones {
-  list-style: none;
-  display: flex; }
-  .botones a {
-    padding: 0rem 1rem;
-    font-family: "Roboto", sans-serif !important;
-    font-weight: 700;
-    font-size: 130%;
-    text-decoration: none;
-    color: #e10e82; }
 
 @media (max-width: 768px) {
   .header {
     padding: 1rem 1rem 0rem 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .header ul {
-      padding-left: 0rem; }
+    flex-direction: column; }
   .logogame {
-    width: 180px;
+    width: 150px;
     padding-bottom: 5px; } }
 
 @media (max-width: 425px) {
   .header {
-    padding: 1rem 0rem .5rem 0rem;
+    padding: 0rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
   .logogame {
-    width: 160px;
-    padding-bottom: 5px; }
-  .botones {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0rem; }
-    .botones a {
-      padding: 3px;
-      font-weight: 700;
-      font-size: 100%;
-      text-decoration: none;
-      color: #e10e82; } }
+    width: 140px;
+    padding-bottom: 5px; } }
 
 .banner {
   margin: 0rem -2.5rem;
@@ -115,8 +93,8 @@ h2 {
   background-position-y: center; }
   .banner h1 {
     padding: 0rem 2rem;
-    font-size: 350%;
     text-align: center;
+    font-size: 300%;
     text-shadow: 2px 2px 3px #353535;
     text-transform: uppercase;
     position: relative;
@@ -172,11 +150,9 @@ h2 {
       padding: 2px; } }
 
 @media (max-width: 425px) {
-  .banner {
-    height: 250px; }
-    .banner h1 {
-      font-size: 200%;
-      top: 40%; }
+  .banner h1 {
+    font-size: 220%;
+    top: 25%; }
   .productos-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -411,6 +387,21 @@ h2 {
   font-size: 130%;
   padding: 8px; }
 
+.accordion {
+  --bs-accordion-color: $negro;
+  font-size: 20px;
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem $rosa-transparente;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+
+.accordion-button {
+  color: #e10e82;
+  font-size: 25px; }
+
+.accordion-button:not(.collapsed) {
+  color: #e10e82;
+  background-color: #e10e8223; }
+
 .banner-blog {
   margin: 1rem -2.5rem 0rem -2.5rem;
   background-image: url("https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg");
@@ -427,7 +418,11 @@ h2 {
     background-image: url("https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg");
     height: 300px;
     background-size: cover;
-    background-position-y: 60%; } }
+    background-position-y: 60%; }
+  .accordion {
+    font-size: 15px; }
+  .accordion-button {
+    font-size: 20px; } }
 
 @media (max-width: 425px) {
   .blog p {
