@@ -1,4 +1,7 @@
-
+.bg-body-tertiary {
+    --bs-bg-opacity: none;
+    background-color: none;
+}
 
 .header {
     padding: 1rem;
@@ -12,6 +15,16 @@
     .navbar-nav .show>.nav-link {
         color: $rosa;
     }
+}
+
+.form-control {
+    border: var(--bs-border-width) solid $rosa;
+}
+
+.btn {
+    --bs-btn-color: white;
+    background-color: $rosa;
+    --bs-btn-border-color: none;
 }
 
 .logogame {
