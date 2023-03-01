@@ -22,6 +22,9 @@ h2{
 
 .main {
     margin: 0rem 2.5rem;
+    article :hover{
+        filter: grayscale(100%);
+    }
 }
 
 .titulo-interno {

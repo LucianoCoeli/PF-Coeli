@@ -2,48 +2,73 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 4px;
     grid-template-areas:
-        "contacto formulario";
+        "formulario mapa";
+    justify-items: start;
+
+    section {
+        width: 33vw;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: .5rem;
+    
+        input {
+            margin: .5rem;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    
+        textarea {
+            margin: .5rem;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    
+        button {
+            margin-left: 8px;
+            margin-bottom: 1rem;
+            padding: 3px;
+            border-radius: 5px;
+        }
+    
+        .boton {
+            display: flex;
+        }
+    }
+    
+    .mapa {
+        margin: 1rem;
+    }
 }
 
 .contacto {
     p {
-        font-size: 130%;
-        padding: 8px;
+        font-size: 120%;
+        padding: 3px;
         margin: .5rem;
     } 
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: .5rem;
 
-    input {
-        margin: .5rem;
-    }
-
-    textarea {
-        margin: .5rem;
-    }
-
-    button {
-        margin-left: 8px;
-        margin-bottom: 1rem;
-        padding: 3px;
-    }
-
-    .boton {
-        display: flex;
-    }
-}
 
 @media (max-width: 768px) {
+    .contacto-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "formulario" 
+            "mapa";
+        justify-items: start;
+    }
+    
     .contacto {
         p {
-            font-size: 115%;
+            font-size: 100%;
         }
         button {
             margin-bottom: .5rem;
@@ -66,5 +91,4 @@
             padding: 1px;
         }
     }
-
 }

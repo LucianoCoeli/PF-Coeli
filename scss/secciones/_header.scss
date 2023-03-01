@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     font-family: $typo-principal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 130%;
 
     .navbar-nav .nav-link.active,
@@ -25,12 +25,18 @@
     --bs-btn-color: white;
     background-color: $rosa;
     --bs-btn-border-color: none;
+    --bs-btn-hover-bg: #00b400;
 }
 
 .logogame {
     width: 180px;
 }
 
+header li:hover {
+    font-weight: 700;
+    background-color: $rosa-transparente;
+    border-radius: 4px;
+}
 
 @media (max-width: 768px) {
     .header {
