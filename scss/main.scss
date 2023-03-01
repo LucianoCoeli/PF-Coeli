@@ -24,6 +24,13 @@ h2{
     margin: 0rem 2.5rem;
     article :hover{
         filter: grayscale(100%);
+        transition: .4s;
+    }
+    button {
+        color: $blanco;
+        border-radius: 4px;
+        background-color: $verde;
+        border-color: $verde;
     }
 }
 

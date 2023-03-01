@@ -26,6 +26,7 @@
     background-color: $rosa;
     --bs-btn-border-color: none;
     --bs-btn-hover-bg: #00b400;
+    transition: .4s;
 }
 
 .logogame {
@@ -36,6 +37,7 @@ header li:hover {
     font-weight: 700;
     background-color: $rosa-transparente;
     border-radius: 4px;
+    transition: .4s;
 }
 
 @media (max-width: 768px) {

@@ -25,7 +25,13 @@ h2 {
 .main {
   margin: 0rem 2.5rem; }
   .main article :hover {
-    filter: grayscale(100%); }
+    filter: grayscale(100%);
+    transition: .4s; }
+  .main button {
+    color: white;
+    border-radius: 4px;
+    background-color: #00b400;
+    border-color: #00b400; }
 
 .titulo-interno {
   background-color: #00b400;
@@ -76,7 +82,8 @@ h2 {
   --bs-btn-color: white;
   background-color: #e10e82;
   --bs-btn-border-color: none;
-  --bs-btn-hover-bg: #00b400; }
+  --bs-btn-hover-bg: #00b400;
+  transition: .4s; }
 
 .logogame {
   width: 180px; }
@@ -84,7 +91,8 @@ h2 {
 header li:hover {
   font-weight: 700;
   background-color: #e10e8223;
-  border-radius: 4px; }
+  border-radius: 4px;
+  transition: .4s; }
 
 @media (max-width: 768px) {
   .header {
