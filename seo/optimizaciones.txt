@@ -1,0 +1,4 @@
+Optimicé en cada html:
+- keywords
+- description
+- title
